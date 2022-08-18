@@ -13,6 +13,7 @@
   },
   "lint-staged": {
     "src/**/*": [
+      "yarn prettier --write .",
       "yarn lint --fix"
     ]
   },

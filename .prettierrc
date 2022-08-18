@@ -2,5 +2,7 @@
   "semi": false,
   "trailingComma": "none",
   "singleQuote": true,
-  "jsxSingleQuote": true
+  "jsxSingleQuote": true,
+  "bracketSpacing": true,
+  "bracketSameLine": false
 }

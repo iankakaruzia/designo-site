@@ -7,7 +7,5 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "cSpell.words": [
-    "preact"
-  ]
+  "cSpell.words": ["preact"]
 }

@@ -18,7 +18,9 @@
         "parser": "@typescript-eslint/parser",
         "extraFileExtensions": [".astro"]
       },
-      "rules": {}
+      "rules": {
+        "react/self-closing-comp": "off"
+      }
     },
     {
       "files": ["*.tsx", "*.ts", "*.mjs", "*.cjs"],
