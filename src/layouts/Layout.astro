@@ -1,5 +1,6 @@
 ---
 import { MobileMenu } from '@components/MobileMenu'
+import DesktopMenu from '@components/DesktopMenu.astro'
 import logoIcon from '@assets/shared/logo-dark.png'
 
 export interface Props {
@@ -20,10 +21,13 @@ const { title } = Astro.props as Props
     <title>{title}</title>
   </head>
   <body class='bg-white text-gray-700 font-normal antialiased min-h-screen'>
-    <header class='flex items-center justify-between px-6 py-8'>
+    <header
+      class='flex items-center justify-between px-6 md:px-10 lg:px-[165px] py-8 md:py-16'
+    >
       <a href='/'>
         <img src={logoIcon} alt='Designo Logo' class='w-[202px]' />
       </a>
+      <DesktopMenu />
       <MobileMenu client:media='(max-width: 768px)' />
     </header>
 

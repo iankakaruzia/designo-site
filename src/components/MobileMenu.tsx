@@ -12,6 +12,7 @@ export function MobileMenu() {
       <button
         onClick={() => setIsOpen((prevIsOpen) => !prevIsOpen)}
         aria-label={isOpen ? 'Close Menu' : 'Open Menu'}
+        className='md:hidden'
       >
         <img
           src={isOpen ? iconClose : iconHamburger}
