@@ -24,13 +24,13 @@ export function MobileMenu() {
         aria-hidden={!isOpen}
         className={classnames(
           'fixed inset-0 top-[91px] z-10 bg-black bg-opacity-50 transition-all duration-200 ease-in-out',
-          isOpen ? 'opacity-100' : 'pointer-events-none opacity-0'
+          isOpen ? 'block opacity-100' : 'pointer-events-none hidden opacity-0'
         )}
       >
         <ul class='flex flex-col gap-8 bg-gray-900 px-6 py-12'>
           <li>
             <a
-              href='/'
+              href='/company'
               className='text-2xl uppercase leading-6 tracking-[2px] text-white'
             >
               Our Company
@@ -38,7 +38,7 @@ export function MobileMenu() {
           </li>
           <li>
             <a
-              href='/'
+              href='/locations'
               className='text-2xl uppercase leading-6 tracking-[2px] text-white'
             >
               Locations
@@ -46,7 +46,7 @@ export function MobileMenu() {
           </li>
           <li>
             <a
-              href='/'
+              href='/contact'
               className='text-2xl uppercase leading-6 tracking-[2px] text-white'
             >
               Contact
