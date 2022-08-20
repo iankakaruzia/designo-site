@@ -1,6 +1,7 @@
 ---
 import { MobileMenu } from '@components/MobileMenu'
 import DesktopMenu from '@components/DesktopMenu.astro'
+import ContactCTA from '@components/ContactCTA.astro'
 import logoDarkIcon from '@assets/shared/logo-dark.png'
 import logoLightIcon from '@assets/shared/logo-light.png'
 
@@ -9,7 +10,7 @@ export interface Props {
   hideContactCTA?: boolean
 }
 
-const { title } = Astro.props as Props
+const { title, hideContactCTA = false } = Astro.props as Props
 ---
 
 <!DOCTYPE html>
@@ -35,6 +36,8 @@ const { title } = Astro.props as Props
     </header>
 
     <slot />
+
+    {!hideContactCTA && <ContactCTA />}
 
     <footer
       class='bg-gray-900 text-white px-6 md:px-10 lg:px-[165px] pb-16 md:pb-20 lg:pb-[72px] pt-16 md:pt-20 lg:pt-[72px]'
