@@ -1,8 +1,8 @@
 import { useState } from 'preact/hooks'
 
-import iconClose from '@assets/shared/mobile/icon-close.svg'
-import iconHamburger from '@assets/shared/mobile/icon-hamburger.svg'
-import { classnames } from '@utils/classnames'
+import iconClose from '@/assets/shared/mobile/icon-close.svg'
+import iconHamburger from '@/assets/shared/mobile/icon-hamburger.svg'
+import { classnames } from '@/utils/classnames'
 
 export function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false)
