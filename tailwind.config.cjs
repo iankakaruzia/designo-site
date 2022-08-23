@@ -3,6 +3,9 @@ module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     extend: {
+      backgroundImage: {
+        cta: "url('/assets/shared/bg-pattern-call-to-action.svg')"
+      },
       fontFamily: {
         sans: ['Jost', 'sans-serif']
       },
