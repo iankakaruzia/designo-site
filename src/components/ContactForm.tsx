@@ -99,9 +99,16 @@ export function ContactForm() {
         onSubmit={onSubmit}
         name='contact'
         method='POST'
+        netlify-honeypot='bot-field'
         data-netlify='true'
+        data-netlify-recaptcha='true'
       >
         <input type='hidden' name='form-name' value='contact' />
+        <p class='hidden'>
+          <label>
+            Don't fill this out if you're human: <input name='bot-field' />
+          </label>
+        </p>
         <div>
           <input
             value={name}
@@ -144,6 +151,8 @@ export function ContactForm() {
           />
           {!!formErrors?.message && <span>{formErrors.message}</span>}
         </div>
+
+        <div data-netlify-recaptcha='true' />
 
         <button disabled={isLoading} type='submit'>
           Submit
