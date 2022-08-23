@@ -1,0 +1,10 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import { ContactForm } from '@/components/ContactForm'
+---
+
+<Layout title='Contact Us - Designo' hideContactCTA>
+  <main>
+    <ContactForm client:load />
+  </main>
+</Layout>
