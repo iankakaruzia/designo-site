@@ -95,7 +95,13 @@ export function ContactForm() {
 
   return (
     <div>
-      <form onSubmit={onSubmit}>
+      <form
+        onSubmit={onSubmit}
+        name='contact'
+        method='POST'
+        data-netlify='true'
+      >
+        <input type='hidden' name='form-name' value='contact' />
         <div>
           <input
             value={name}
