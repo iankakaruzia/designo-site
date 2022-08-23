@@ -102,6 +102,7 @@ export function ContactForm() {
             onInput={(e) => onInputChange(e, setName)}
             type='text'
             placeholder='Name'
+            name='name'
           />
           {!!formErrors?.name && <span>{formErrors.name}</span>}
         </div>
@@ -112,6 +113,7 @@ export function ContactForm() {
             value={email}
             onInput={(e) => onInputChange(e, setEmail)}
             placeholder='Email Address'
+            name='email'
           />
           {!!formErrors?.email && <span>{formErrors.email}</span>}
         </div>
@@ -122,6 +124,7 @@ export function ContactForm() {
             value={phone}
             onInput={(e) => onInputChange(e, setPhone)}
             placeholder='Phone'
+            name='phone'
           />
           {!!formErrors?.phone && <span>{formErrors.phone}</span>}
         </div>
@@ -131,6 +134,7 @@ export function ContactForm() {
             placeholder='Your Message'
             value={message}
             onInput={(e) => onInputChange(e, setMessage)}
+            name='message'
           />
           {!!formErrors?.message && <span>{formErrors.message}</span>}
         </div>
