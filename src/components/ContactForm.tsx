@@ -97,8 +97,8 @@ export function ContactForm() {
   }
 
   return (
-    <div class='flex flex-col items-center bg-peach-500 bg-contact-mobile bg-[top_0_right_-418px] bg-no-repeat px-6 py-[72px]'>
-      <div class='mb-12 flex flex-col items-center'>
+    <div class='flex flex-col items-center bg-peach-500 bg-contact-mobile bg-[top_0_right_-418px] bg-no-repeat pt-[72px]'>
+      <div class='mb-12 flex flex-col items-center px-6'>
         <h1 class='mb-6 text-[32px] font-medium leading-[36px] text-white'>
           Contact Us
         </h1>
@@ -115,7 +115,7 @@ export function ContactForm() {
         method='POST'
         netlify-honeypot='bot-field'
         data-netlify='true'
-        class='flex w-full flex-col items-center gap-3'
+        class='flex w-full flex-col items-center gap-3 bg-contact-bottom-mobile bg-right-bottom bg-no-repeat px-6 pb-[72px]'
       >
         <input type='hidden' name='form-name' value='contact' />
         <p class='hidden'>
@@ -131,7 +131,7 @@ export function ContactForm() {
             type='text'
             placeholder='Name'
             name='name'
-            class='w-full border-b bg-transparent p-3 text-body font-medium text-white placeholder:text-white placeholder:text-opacity-50 focus:border-b-[3px] focus:outline-none'
+            class='w-full border-b bg-transparent p-3 text-body font-medium text-white placeholder:text-white placeholder:text-opacity-50 focus:border-b-[3px] focus:pb-[9px] focus:outline-none'
           />
           {!!formErrors?.name && (
             <div class='absolute right-0 top-[13px] flex items-center'>
@@ -155,7 +155,7 @@ export function ContactForm() {
             placeholder='Email Address'
             name='email'
             class={classnames(
-              'w-full border-b bg-transparent p-3 text-body font-medium text-white placeholder:text-white placeholder:text-opacity-50 focus:border-b-[3px] focus:outline-none',
+              'w-full border-b bg-transparent p-3 text-body font-medium text-white placeholder:text-white placeholder:text-opacity-50 focus:border-b-[3px] focus:pb-[9px] focus:outline-none',
               formErrors?.email?.includes('Please use a valid email address') &&
                 'text-ellipsis pr-[192px]'
             )}
@@ -181,7 +181,7 @@ export function ContactForm() {
             type='text'
             placeholder='Phone'
             name='phone'
-            class='w-full border-b bg-transparent p-3 text-body font-medium text-white placeholder:text-white placeholder:text-opacity-50 focus:border-b-[3px] focus:outline-none'
+            class='w-full border-b bg-transparent p-3 text-body font-medium text-white placeholder:text-white placeholder:text-opacity-50 focus:border-b-[3px] focus:pb-[9px] focus:outline-none'
           />
           {!!formErrors?.phone && (
             <div class='absolute right-0 top-[13px] flex items-center'>
