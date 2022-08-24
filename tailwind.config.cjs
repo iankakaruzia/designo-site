@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         cta: "url('/assets/shared/bg-pattern-call-to-action.svg')",
+        'pattern-leaf': "url('/assets/shared/bg-pattern-leaf.svg')",
         'contact-desktop': "url('/assets/contact/bg-pattern-hero-desktop.svg')",
         'contact-bottom-mobile':
           "url('/assets/contact/bg-bottom-pattern-mobile.svg')",
