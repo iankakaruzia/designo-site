@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        cta: "url('/assets/shared/bg-pattern-call-to-action.svg')"
+        cta: "url('/assets/shared/bg-pattern-call-to-action.svg')",
+        'contact-desktop': "url('/assets/contact/bg-pattern-hero-desktop.svg')",
+        'contact-mobile':
+          "url('/assets/contact/bg-pattern-hero-contact-mobile.svg')"
       },
       fontFamily: {
         sans: ['Jost', 'sans-serif']
