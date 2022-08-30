@@ -1,15 +1,131 @@
 ---
+import ProjectCards from '@/components/ProjectCards.astro'
 import Layout from '@/layouts/Layout.astro'
+
+import illustrationFriendly from '@/assets/home/illustration-friendly.svg'
+import illustrationPassionate from '@/assets/home/illustration-passionate.svg'
+import illustrationResourceful from '@/assets/home/illustration-resourceful.svg'
 ---
 
 <Layout title='Home - Designo'>
-  <main class='mt-60'>
-    <h1>Welcome to <span>Astro</span></h1>
-    <p>
-      Check out the <code>src/pages</code> directory to get started.<br />
-      <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-    </p>
+  <main>
+    <section
+      class='bg-peach-500 pt-20 overlay-img bg-[length:573px,_640px] bg-[position:bottom_-342px_center,_center_left] pb-[451px]'
+    >
+      <div class='px-6 flex flex-col items-center'>
+        <h1
+          class='font-medium text-white text-center mb-[14px] text-[32px] leading-9'
+        >
+          Award-winning custom designs and digital branding solutions
+        </h1>
+        <p class='text-white text-body text-center mb-6'>
+          With over 10 years in the industry, we are experienced in creating
+          fully responsive websites, app design, and engaging brand experiences.
+          Find out more about our services
+        </p>
+        <a
+          href='/'
+          class='bg-white uppercase h-14 flex items-center px-6 rounded-lg font-medium text-[15px] leading-[22px] tracking-[1px]'
+          >Learn More
+        </a>
+      </div>
+    </section>
 
-    <button class='pt-auto'>Test</button>
+    <ProjectCards />
+
+    <ul class='flex flex-col gap-20 px-6 my-[120px]'>
+      <li class='flex flex-col items-center'>
+        <div class='relative h-[202px] w-[202px] mb-12'>
+          <div
+            class='overlay passionate-overlay absolute h-full w-full rounded-full'
+          >
+          </div>
+          <img
+            src={illustrationPassionate}
+            alt='Man sitting on a chair writing something on a notebook'
+          />
+        </div>
+        <strong class='text-center font-medium text-heading3 uppercase mb-8'>
+          Passionate
+        </strong>
+
+        <p class='text-center'>
+          Each project starts with an in-depth brand research to ensure we only
+          create products that serve a purpose. We merge art, design, and
+          technology into exciting new solutions.
+        </p>
+      </li>
+
+      <li class='flex flex-col items-center'>
+        <div class='relative h-[202px] w-[202px] mb-12'>
+          <div
+            class='overlay passionate-overlay absolute h-full w-full rounded-full'
+          >
+          </div>
+          <img
+            src={illustrationResourceful}
+            alt='Man sitting on a chair writing something on a notebook'
+          />
+        </div>
+        <strong class='text-center font-medium text-heading3 uppercase mb-8'>
+          Resourceful
+        </strong>
+
+        <p class='text-center'>
+          Everything that we do has a strategic purpose. We use an agile
+          approach in all of our projects and value customer collaboration. It
+          guarantees superior results that fulfill our client's needs.
+        </p>
+      </li>
+
+      <li class='flex flex-col items-center'>
+        <div class='relative h-[202px] w-[202px] mb-12'>
+          <div
+            class='overlay passionate-overlay absolute h-full w-full rounded-full'
+          >
+          </div>
+          <img src={illustrationFriendly} alt='Two people holding a board' />
+        </div>
+        <strong class='text-center font-medium text-heading3 uppercase mb-8'>
+          Friendly
+        </strong>
+
+        <p class='text-center'>
+          We are a group of enthusiastic folks who know how to put people first.
+          Our success depends on our customers, and we strive to give them the
+          best experience a company can provide.
+        </p>
+      </li>
+    </ul>
   </main>
 </Layout>
+
+<style scoped>
+  .overlay-img {
+    background-image: url(/assets/home/desktop/image-hero-phone.png),
+      url(/assets/home/desktop/bg-pattern-hero-home.svg);
+    background-repeat: no-repeat, no-repeat;
+  }
+
+  .overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(93, 2, 2, 0.0001) 0%,
+      rgba(93, 2, 2, 0.497569) 100%
+    );
+    mix-blend-mode: normal;
+    opacity: 0.2;
+  }
+
+  .passionate-overlay {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+
+  .resourceful-overlay {
+    transform: matrix(0, 1, 1, 0, 0, 0);
+  }
+
+  .friendly-overlay {
+    transform: matrix(0, -1, -1, 0, 0, 0);
+  }
+</style>
