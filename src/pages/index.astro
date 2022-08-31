@@ -8,18 +8,22 @@ import illustrationResourceful from '@/assets/home/illustration-resourceful.svg'
 ---
 
 <Layout title='Home - Designo'>
-  <main class='md:px-10'>
+  <main
+    class='md:px-10 lg:px-[165px] lg:bg-pattern-leaf lg:bg-no-repeat lg:bg-[top_320px_left]'
+  >
     <section
-      class='bg-peach-500 md:rounded-[15px] pt-20 md:pt-[60px] overlay-img bg-[length:573px,_640px] bg-[position:bottom_-342px_center,_center_right_-265px] md:bg-[position:bottom_-326px_center,_top_100px_right_-125px] pb-[451px] md:pb-[457px]'
+      class='bg-peach-500 md:rounded-[15px] pt-20 md:pt-[60px] lg:px-[95px] lg:py-[145px] overlay-img bg-[length:573px,_640px] bg-[position:bottom_-342px_center,_center_right_-265px] md:bg-[position:bottom_-326px_center,_top_100px_right_-125px] lg:bg-[position:bottom_-225px_right_-64px,_top_right] pb-[451px] md:pb-[457px]'
     >
-      <div class='px-6 md:px-[58px] flex flex-col items-center'>
+      <div
+        class='px-6 lg:px-0 md:px-[58px] flex flex-col items-center lg:max-w-[540px] lg:items-start'
+      >
         <h1
-          class='font-medium text-white text-center mb-[14px] md:mb-2 text-[32px] leading-9 md:text-heading1'
+          class='font-medium text-white text-center lg:text-left mb-[14px] md:mb-2 lg:mb-3 text-[32px] leading-9 md:text-heading1'
         >
           Award-winning custom designs and digital branding solutions
         </h1>
         <p
-          class='text-white text-body text-center mb-6 md:mb-5 md:max-w-[445px]'
+          class='text-white text-body text-center lg:text-left mb-6 md:mb-5 lg:mb-10 md:max-w-[445px]'
         >
           With over 10 years in the industry, we are experienced in creating
           fully responsive websites, app design, and engaging brand experiences.
@@ -27,7 +31,7 @@ import illustrationResourceful from '@/assets/home/illustration-resourceful.svg'
         </p>
         <a
           href='/'
-          class='bg-white uppercase h-14 flex items-center px-6 rounded-lg font-medium text-[15px] leading-[22px] tracking-[1px]'
+          class='bg-white hover:bg-peach-300 transition-colors hover:text-white uppercase h-14 flex items-center px-6 rounded-lg font-medium text-[15px] leading-[22px] tracking-[1px]'
           >Learn More
         </a>
       </div>
@@ -36,10 +40,12 @@ import illustrationResourceful from '@/assets/home/illustration-resourceful.svg'
     <ProjectCards />
 
     <ul
-      class='flex flex-col gap-20 md:gap-8 px-6 md:px-0 my-[120px] md:mb-[68px]'
+      class='flex flex-col gap-20 md:gap-8 px-6 md:px-0 my-[120px] md:mb-[68px] lg:my-40 lg:flex-row lg:grid lg:grid-cols-3 lg:gap-[30px]'
     >
-      <li class='flex flex-col items-center md:flex-row'>
-        <div class='relative h-[202px] w-[202px] mb-12 md:mb-0 md:mr-12'>
+      <li class='flex flex-col items-center md:flex-row lg:flex-col'>
+        <div
+          class='relative h-[202px] w-[202px] mb-12 md:mb-0 md:mr-12 lg:mb-12 lg:mr-0'
+        >
           <div
             class='overlay passionate-overlay absolute h-full w-full rounded-full'
           >
@@ -50,14 +56,14 @@ import illustrationResourceful from '@/assets/home/illustration-resourceful.svg'
             class='md:max-w-none'
           />
         </div>
-        <div class='flex flex-col items-center md:items-start'>
+        <div class='flex flex-col items-center md:items-start lg:items-center'>
           <strong
-            class='text-center font-medium text-heading3 uppercase mb-8 md:mb-4'
+            class='text-center font-medium text-heading3 uppercase mb-8 md:mb-4 lg:mb-8'
           >
             Passionate
           </strong>
 
-          <p class='text-center md:text-left'>
+          <p class='text-center md:text-left lg:text-center'>
             Each project starts with an in-depth brand research to ensure we
             only create products that serve a purpose. We merge art, design, and
             technology into exciting new solutions.
@@ -65,8 +71,10 @@ import illustrationResourceful from '@/assets/home/illustration-resourceful.svg'
         </div>
       </li>
 
-      <li class='flex flex-col items-center md:flex-row'>
-        <div class='relative h-[202px] w-[202px] mb-12 md:mb-0 md:mr-12'>
+      <li class='flex flex-col items-center md:flex-row lg:flex-col'>
+        <div
+          class='relative h-[202px] w-[202px] mb-12 md:mb-0 md:mr-12 lg:mb-12 lg:mr-0'
+        >
           <div
             class='overlay passionate-overlay absolute h-full w-full rounded-full'
           >
@@ -77,14 +85,14 @@ import illustrationResourceful from '@/assets/home/illustration-resourceful.svg'
             class='md:max-w-none'
           />
         </div>
-        <div class='flex flex-col items-center md:items-start'>
+        <div class='flex flex-col items-center md:items-start lg:items-center'>
           <strong
-            class='text-center font-medium text-heading3 uppercase mb-8 md:mb-4'
+            class='text-center font-medium text-heading3 uppercase mb-8 md:mb-4 lg:mb-8'
           >
             Resourceful
           </strong>
 
-          <p class='text-center md:text-left'>
+          <p class='text-center md:text-left lg:text-center'>
             Everything that we do has a strategic purpose. We use an agile
             approach in all of our projects and value customer collaboration. It
             guarantees superior results that fulfill our client's needs.
@@ -92,8 +100,10 @@ import illustrationResourceful from '@/assets/home/illustration-resourceful.svg'
         </div>
       </li>
 
-      <li class='flex flex-col items-center md:flex-row'>
-        <div class='relative h-[202px] w-[202px] mb-12 md:mb-0 md:mr-12'>
+      <li class='flex flex-col items-center md:flex-row lg:flex-col'>
+        <div
+          class='relative h-[202px] w-[202px] mb-12 md:mb-0 md:mr-12 lg:mb-12 lg:mr-0'
+        >
           <div
             class='overlay passionate-overlay absolute h-full w-full rounded-full'
           >
@@ -104,14 +114,14 @@ import illustrationResourceful from '@/assets/home/illustration-resourceful.svg'
             class='md:max-w-none'
           />
         </div>
-        <div class='flex flex-col items-center md:items-start'>
+        <div class='flex flex-col items-center md:items-start lg:items-center'>
           <strong
-            class='text-center font-medium text-heading3 uppercase mb-8 md:mb-4'
+            class='text-center font-medium text-heading3 uppercase mb-8 md:mb-4 lg:mb-8'
           >
             Friendly
           </strong>
 
-          <p class='text-center md:text-left'>
+          <p class='text-center md:text-left lg:text-center'>
             We are a group of enthusiastic folks who know how to put people
             first. Our success depends on our customers, and we strive to give
             them the best experience a company can provide.
