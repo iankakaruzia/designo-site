@@ -8,17 +8,19 @@ import illustrationResourceful from '@/assets/home/illustration-resourceful.svg'
 ---
 
 <Layout title='Home - Designo'>
-  <main>
+  <main class='md:px-10'>
     <section
-      class='bg-peach-500 pt-20 overlay-img bg-[length:573px,_640px] bg-[position:bottom_-342px_center,_center_left] pb-[451px]'
+      class='bg-peach-500 md:rounded-[15px] pt-20 md:pt-[60px] overlay-img bg-[length:573px,_640px] bg-[position:bottom_-342px_center,_center_right_-265px] md:bg-[position:bottom_-326px_center,_top_100px_right_-125px] pb-[451px] md:pb-[457px]'
     >
-      <div class='px-6 flex flex-col items-center'>
+      <div class='px-6 md:px-[58px] flex flex-col items-center'>
         <h1
-          class='font-medium text-white text-center mb-[14px] text-[32px] leading-9'
+          class='font-medium text-white text-center mb-[14px] md:mb-2 text-[32px] leading-9 md:text-heading1'
         >
           Award-winning custom designs and digital branding solutions
         </h1>
-        <p class='text-white text-body text-center mb-6'>
+        <p
+          class='text-white text-body text-center mb-6 md:mb-5 md:max-w-[445px]'
+        >
           With over 10 years in the industry, we are experienced in creating
           fully responsive websites, app design, and engaging brand experiences.
           Find out more about our services
@@ -33,9 +35,11 @@ import illustrationResourceful from '@/assets/home/illustration-resourceful.svg'
 
     <ProjectCards />
 
-    <ul class='flex flex-col gap-20 px-6 my-[120px]'>
-      <li class='flex flex-col items-center'>
-        <div class='relative h-[202px] w-[202px] mb-12'>
+    <ul
+      class='flex flex-col gap-20 md:gap-8 px-6 md:px-0 my-[120px] md:mb-[68px]'
+    >
+      <li class='flex flex-col items-center md:flex-row'>
+        <div class='relative h-[202px] w-[202px] mb-12 md:mb-0 md:mr-12'>
           <div
             class='overlay passionate-overlay absolute h-full w-full rounded-full'
           >
@@ -43,21 +47,26 @@ import illustrationResourceful from '@/assets/home/illustration-resourceful.svg'
           <img
             src={illustrationPassionate}
             alt='Man sitting on a chair writing something on a notebook'
+            class='md:max-w-none'
           />
         </div>
-        <strong class='text-center font-medium text-heading3 uppercase mb-8'>
-          Passionate
-        </strong>
+        <div class='flex flex-col items-center md:items-start'>
+          <strong
+            class='text-center font-medium text-heading3 uppercase mb-8 md:mb-4'
+          >
+            Passionate
+          </strong>
 
-        <p class='text-center'>
-          Each project starts with an in-depth brand research to ensure we only
-          create products that serve a purpose. We merge art, design, and
-          technology into exciting new solutions.
-        </p>
+          <p class='text-center md:text-left'>
+            Each project starts with an in-depth brand research to ensure we
+            only create products that serve a purpose. We merge art, design, and
+            technology into exciting new solutions.
+          </p>
+        </div>
       </li>
 
-      <li class='flex flex-col items-center'>
-        <div class='relative h-[202px] w-[202px] mb-12'>
+      <li class='flex flex-col items-center md:flex-row'>
+        <div class='relative h-[202px] w-[202px] mb-12 md:mb-0 md:mr-12'>
           <div
             class='overlay passionate-overlay absolute h-full w-full rounded-full'
           >
@@ -65,36 +74,49 @@ import illustrationResourceful from '@/assets/home/illustration-resourceful.svg'
           <img
             src={illustrationResourceful}
             alt='Man sitting on a chair writing something on a notebook'
+            class='md:max-w-none'
           />
         </div>
-        <strong class='text-center font-medium text-heading3 uppercase mb-8'>
-          Resourceful
-        </strong>
+        <div class='flex flex-col items-center md:items-start'>
+          <strong
+            class='text-center font-medium text-heading3 uppercase mb-8 md:mb-4'
+          >
+            Resourceful
+          </strong>
 
-        <p class='text-center'>
-          Everything that we do has a strategic purpose. We use an agile
-          approach in all of our projects and value customer collaboration. It
-          guarantees superior results that fulfill our client's needs.
-        </p>
+          <p class='text-center md:text-left'>
+            Everything that we do has a strategic purpose. We use an agile
+            approach in all of our projects and value customer collaboration. It
+            guarantees superior results that fulfill our client's needs.
+          </p>
+        </div>
       </li>
 
-      <li class='flex flex-col items-center'>
-        <div class='relative h-[202px] w-[202px] mb-12'>
+      <li class='flex flex-col items-center md:flex-row'>
+        <div class='relative h-[202px] w-[202px] mb-12 md:mb-0 md:mr-12'>
           <div
             class='overlay passionate-overlay absolute h-full w-full rounded-full'
           >
           </div>
-          <img src={illustrationFriendly} alt='Two people holding a board' />
+          <img
+            src={illustrationFriendly}
+            alt='Two people holding a board'
+            class='md:max-w-none'
+          />
         </div>
-        <strong class='text-center font-medium text-heading3 uppercase mb-8'>
-          Friendly
-        </strong>
+        <div class='flex flex-col items-center md:items-start'>
+          <strong
+            class='text-center font-medium text-heading3 uppercase mb-8 md:mb-4'
+          >
+            Friendly
+          </strong>
 
-        <p class='text-center'>
-          We are a group of enthusiastic folks who know how to put people first.
-          Our success depends on our customers, and we strive to give them the
-          best experience a company can provide.
-        </p>
+          <p class='text-center md:text-left'>
+            We are a group of enthusiastic folks who know how to put people
+            first. Our success depends on our customers, and we strive to give
+            them the best experience a company can provide.
+          </p>
+        </div>
       </li>
     </ul>
   </main>
