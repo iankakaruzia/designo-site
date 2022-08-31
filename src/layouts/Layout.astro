@@ -14,7 +14,7 @@ const { title, hideContactCTA = false } = Astro.props as Props
 ---
 
 <!DOCTYPE html>
-<html lang='en'>
+<html lang='en' class='scroll-smooth'>
   <head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width' />
@@ -55,19 +55,19 @@ const { title, hideContactCTA = false } = Astro.props as Props
           class='flex flex-col md:flex-row items-center gap-8 w-full md:w-fit pt-8 mt-8 md:border-none border-t border-white border-opacity-10 md:p-0 md:m-0'
         >
           <a
-            href='/'
+            href='/company'
             class='text-[14px] leading-[14px] tracking-[2px] uppercase hover:underline'
           >
             Our Company
           </a>
           <a
-            href='/'
+            href='/locations'
             class='text-[14px] leading-[14px] tracking-[2px] uppercase hover:underline'
           >
             Locations
           </a>
           <a
-            href='/'
+            href='/contact'
             class='text-[14px] leading-[14px] tracking-[2px] uppercase hover:underline'
           >
             Contact
