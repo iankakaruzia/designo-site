@@ -1,0 +1,20 @@
+---
+export interface Props {
+  title: string
+  subtitle: string
+  image: string
+  imageAlt: string
+}
+
+const { title, subtitle, image, imageAlt } = Astro.props as Props
+---
+
+<li class='rounded-[15px] overflow-hidden'>
+  <img class='h-80' src={image} alt={imageAlt} />
+  <div class='bg-[#fdf3f0] py-8 px-[30px] flex flex-col items-center gap-4'>
+    <strong class='font-medium text-heading3 text-peach-500 uppercase'
+      >{title}
+    </strong>
+    <p class='text-center'>{subtitle}</p>
+  </div>
+</li>

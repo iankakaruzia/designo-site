@@ -1,0 +1,97 @@
+---
+import arrowRight from '@/assets/shared/desktop/icon-right-arrow.svg'
+import { classnames } from '@/utils/classnames'
+
+const isHomePage = Astro.url.pathname === '/'
+---
+
+<ul
+  class={classnames(
+    'flex flex-col gap-6',
+    isHomePage
+      ? 'lg:grid lg:grid-cols-2 lg:grid-rows-2 lg:gap-[24px]'
+      : 'lg:grid lg:grid-cols-2 lg:gap-[30px]'
+  )}
+>
+  {
+    Astro.url.pathname !== '/projects/web-design' && (
+      <li
+        class={classnames(
+          'relative flex h-[250px] overflow-hidden rounded-[15px] bg-black bg-[url(/assets/home/mobile/image-web-design.jpg)] bg-cover bg-no-repeat font-medium uppercase text-white before:absolute before:inset-0 before:bg-black/50 before:transition-colors hover:before:bg-peach-500/80 md:h-[200px] md:bg-[url(/assets/home/tablet/image-web-design.jpg)]',
+          isHomePage
+            ? 'lg:row-span-2 lg:mr-[6px] lg:h-[640px] lg:bg-[url(/assets/home/desktop/image-web-design-large.jpg)]'
+            : 'lg:h-[308px] lg:bg-[url(/assets/home/desktop/image-web-design-small.jpg)]'
+        )}
+      >
+        <a
+          class='z-10 flex h-full w-full flex-col items-center justify-center'
+          href='/projects/web-design'
+        >
+          <strong class='mb-3 text-center text-[28px] font-medium leading-9 tracking-[1.4px] md:mb-6 md:text-heading2'>
+            Web Design
+          </strong>
+          <div class='flex items-center gap-4'>
+            <span class='text-[15px] font-medium leading-[22px] tracking-[5px]'>
+              View Projects
+            </span>
+            <img
+              src={arrowRight}
+              class='h-2'
+              alt='Arrow pointing to the right'
+            />
+          </div>
+        </a>
+      </li>
+    )
+  }
+
+  {
+    Astro.url.pathname !== '/projects/app-design' && (
+      <li class='relative flex h-[250px] overflow-hidden rounded-[15px] bg-black bg-[url(/assets/home/mobile/image-app-design.jpg)] bg-cover bg-no-repeat font-medium uppercase text-white before:absolute before:inset-0 before:bg-black/50 before:transition-colors hover:before:bg-peach-500/80 md:h-[200px] md:bg-[url(/assets/home/tablet/image-app-design.jpg)] lg:h-[308px] lg:bg-[url(/assets/home/desktop/image-app-design.jpg)]'>
+        <a
+          class='z-10 flex h-full w-full flex-col items-center justify-center'
+          href='/projects/app-design'
+        >
+          <strong class='mb-3 text-center text-[28px] font-medium leading-9 tracking-[1.4px] md:text-heading2'>
+            App Design
+          </strong>
+          <div class='flex items-center gap-4'>
+            <span class='text-[15px] font-medium leading-[22px] tracking-[5px]'>
+              View Projects
+            </span>
+            <img
+              src={arrowRight}
+              class='h-2'
+              alt='Arrow pointing to the right'
+            />
+          </div>
+        </a>
+      </li>
+    )
+  }
+
+  {
+    Astro.url.pathname !== '/projects/graphic-design' && (
+      <li class='relative flex h-[250px] overflow-hidden rounded-[15px] bg-black bg-[url(/assets/home/mobile/image-graphic-design.jpg)] bg-cover bg-no-repeat font-medium uppercase text-white before:absolute before:inset-0 before:bg-black/50 before:transition-colors hover:before:bg-peach-500/80 md:h-[200px] md:bg-[url(/assets/home/tablet/image-graphic-design.jpg)] lg:h-[308px] lg:bg-[url(/assets/home/desktop/image-graphic-design.jpg)]'>
+        <a
+          class='z-10 flex h-full w-full flex-col items-center justify-center'
+          href='/projects/graphic-design'
+        >
+          <strong class='mb-3 text-center text-[28px] font-medium leading-9 tracking-[1.4px] md:text-heading2'>
+            Graphic Design
+          </strong>
+          <div class='flex items-center gap-4'>
+            <span class='text-[15px] font-medium leading-[22px] tracking-[5px]'>
+              View Projects
+            </span>
+            <img
+              src={arrowRight}
+              class='h-2'
+              alt='Arrow pointing to the right'
+            />
+          </div>
+        </a>
+      </li>
+    )
+  }
+</ul>

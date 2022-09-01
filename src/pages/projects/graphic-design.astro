@@ -1,10 +1,48 @@
 ---
-import ProjectCards from '@/components/ProjectCards.astro'
+import ProjectCard from '@/components/ProjectCard.astro'
+import ProjectTypesCards from '@/components/ProjectTypesCards.astro'
 import Layout from '@/layouts/Layout.astro'
+
+import changeImage from '@/assets/graphic-design/image-change.jpg'
+import boxedWaterImage from '@/assets/graphic-design/image-boxed-water.jpg'
+import scienceImage from '@/assets/graphic-design/image-science.jpg'
 ---
 
 <Layout title='Graphic Design - Designo'>
-  <main>
-    <ProjectCards />
+  <main class='pb-24'>
+    <section
+      class='bg-peach-500 px-6 bg-[url(/assets/shared/bg-pattern-design-pages-intro-mobile.svg)] bg-no-repeat bg-[position:top_right] h-80 flex flex-col items-center justify-center text-white'
+    >
+      <h1 class='mb-6 text-[32px] leading-9 font-medium'>Graphic Design</h1>
+      <p class='text-center'>
+        We deliver eye-catching branding materials that are tailored to meet
+        your business objectives.
+      </p>
+    </section>
+
+    <ul class='flex flex-col px-6 gap-10 pt-24 items-center'>
+      <ProjectCard
+        title='Tim Brown'
+        subtitle="A book cover designed for Tim Brown's new release, \'Change'"
+        image={changeImage}
+        imageAlt='Change book on top of a table'
+      />
+      <ProjectCard
+        title='Boxed Water'
+        subtitle='A simple packaging concept made for Boxed Water'
+        image={boxedWaterImage}
+        imageAlt='Boxed water product'
+      />
+      <ProjectCard
+        title='Science!'
+        subtitle='A poster made in collaboration with the Federal Art Project'
+        image={scienceImage}
+        imageAlt='Poster with an eye and notebook draw with the word Keeping Up on top'
+      />
+    </ul>
+
+    <div class='px-6 mt-24'>
+      <ProjectTypesCards />
+    </div>
   </main>
 </Layout>
