@@ -17,7 +17,7 @@ const isHomePage = Astro.url.pathname === '/'
     Astro.url.pathname !== '/projects/web-design' && (
       <li
         class={classnames(
-          'relative flex h-[250px] overflow-hidden rounded-[15px] bg-black bg-[url(/assets/home/mobile/image-web-design.jpg)] bg-cover bg-no-repeat font-medium uppercase text-white before:absolute before:inset-0 before:bg-black/50 before:transition-colors hover:before:bg-peach-500/80 md:h-[200px] md:bg-[url(/assets/home/tablet/image-web-design.jpg)]',
+          'relative flex h-[250px] overflow-hidden rounded-[15px] bg-black bg-[url(/assets/home/mobile/image-web-design.jpg)] bg-cover bg-no-repeat font-medium uppercase text-white before:absolute before:inset-0 before:bg-black/50 before:transition-colors focus-within:ring-2 focus-within:ring-peach-500 hover:before:bg-peach-500/80 md:h-[200px] md:bg-[url(/assets/home/tablet/image-web-design.jpg)]',
           isHomePage
             ? 'lg:row-span-2 lg:mr-[6px] lg:h-[640px] lg:bg-[url(/assets/home/desktop/image-web-design-large.jpg)]'
             : 'lg:h-[308px] lg:bg-[url(/assets/home/desktop/image-web-design-small.jpg)]'
@@ -47,7 +47,7 @@ const isHomePage = Astro.url.pathname === '/'
 
   {
     Astro.url.pathname !== '/projects/app-design' && (
-      <li class="relative flex h-[250px] overflow-hidden rounded-[15px] bg-black bg-[url(/assets/home/mobile/image-app-design.jpg)] bg-cover bg-no-repeat font-medium uppercase text-white before:absolute before:inset-0 before:bg-black/50 before:transition-colors hover:before:bg-peach-500/80 md:h-[200px] md:bg-[url(/assets/home/tablet/image-app-design.jpg)] lg:h-[308px] lg:bg-[url(/assets/home/desktop/image-app-design.jpg)]">
+      <li class="relative flex h-[250px] overflow-hidden rounded-[15px] bg-black bg-[url(/assets/home/mobile/image-app-design.jpg)] bg-cover bg-no-repeat font-medium uppercase text-white before:absolute before:inset-0 before:bg-black/50 before:transition-colors focus-within:ring-2 focus-within:ring-peach-500 hover:before:bg-peach-500/80 md:h-[200px] md:bg-[url(/assets/home/tablet/image-app-design.jpg)] lg:h-[308px] lg:bg-[url(/assets/home/desktop/image-app-design.jpg)]">
         <a
           class="z-10 flex h-full w-full flex-col items-center justify-center"
           href="/projects/app-design"
@@ -72,7 +72,7 @@ const isHomePage = Astro.url.pathname === '/'
 
   {
     Astro.url.pathname !== '/projects/graphic-design' && (
-      <li class="relative flex h-[250px] overflow-hidden rounded-[15px] bg-black bg-[url(/assets/home/mobile/image-graphic-design.jpg)] bg-cover bg-no-repeat font-medium uppercase text-white before:absolute before:inset-0 before:bg-black/50 before:transition-colors hover:before:bg-peach-500/80 md:h-[200px] md:bg-[url(/assets/home/tablet/image-graphic-design.jpg)] lg:h-[308px] lg:bg-[url(/assets/home/desktop/image-graphic-design.jpg)]">
+      <li class="relative flex h-[250px] overflow-hidden rounded-[15px] bg-black bg-[url(/assets/home/mobile/image-graphic-design.jpg)] bg-cover bg-no-repeat font-medium uppercase text-white before:absolute before:inset-0 before:bg-black/50 before:transition-colors focus-within:ring-2 focus-within:ring-peach-500 hover:before:bg-peach-500/80 md:h-[200px] md:bg-[url(/assets/home/tablet/image-graphic-design.jpg)] lg:h-[308px] lg:bg-[url(/assets/home/desktop/image-graphic-design.jpg)]">
         <a
           class="z-10 flex h-full w-full flex-col items-center justify-center"
           href="/projects/graphic-design"
