@@ -1,10 +1,68 @@
 ---
+import ProjectCard from '@/components/ProjectCard.astro'
 import ProjectTypesCards from '@/components/ProjectTypesCards.astro'
 import Layout from '@/layouts/Layout.astro'
+
+import airfilterImage from '@/assets/app-design/image-airfilter.jpg'
+import eyecamImage from '@/assets/app-design/image-eyecam.jpg'
+import faceitImage from '@/assets/app-design/image-faceit.jpg'
+import loopstudiosImage from '@/assets/app-design/image-loopstudios.jpg'
+import todoImage from '@/assets/app-design/image-todo.jpg'
 ---
 
 <Layout title="App Design - Designo">
-  <main>
-    <ProjectTypesCards />
+  <main
+    class="pb-24 md:pb-[110px] md:px-10 lg:px-[165px] lg:bg-pattern-leaf lg:bg-no-repeat lg:bg-[top_120px_left]"
+  >
+    <section
+      class="bg-peach-500 px-6 md:px-36 bg-[url(/assets/shared/bg-pattern-design-pages-intro-mobile.svg)] md:bg-[url(/assets/shared/bg-pattern-design-pages-intro-tablet.svg)] lg:bg-[url(/assets/app-design/bg-pattern-intro-app.svg)] bg-no-repeat bg-[position:top_right] md:bg-[position:top_-170px_right_-180px] lg:bg-[position:top_-170px_left_-60px] h-80 md:h-[252px] flex flex-col items-center justify-center text-white md:rounded-[15px]"
+    >
+      <h1 class="mb-6 text-[32px] md:text-heading1 leading-9 font-medium">
+        App Design
+      </h1>
+      <p class="text-center">
+        Our mobile designs bring intuitive digital solutions to your customers
+        right at their fingertips.
+      </p>
+    </section>
+
+    <ul
+      class="flex flex-col px-6 md:px-0 gap-10 md:gap-8 pt-24 md:pt-[120px] items-center lg:grid lg:grid-cols-[repeat(auto-fit,_minmax(350px,_1fr))]"
+    >
+      <ProjectCard
+        title="AIRFILTER"
+        subtitle="Solving the problem of poor indoor air quality by filtering the air"
+        image={airfilterImage}
+        imageAlt="Screenshot of Airfilter app"
+      />
+      <ProjectCard
+        title="EYECAM"
+        subtitle="Product that lets you edit your favorite photos and videos at any time"
+        image={eyecamImage}
+        imageAlt="Screenshot of Eyecam app"
+      />
+      <ProjectCard
+        title="FACEIT"
+        subtitle="Get to meet your favorite internet superstar with the faceit app"
+        image={faceitImage}
+        imageAlt="Screenshot of Faceit app"
+      />
+      <ProjectCard
+        title="TODO"
+        subtitle="A todo app that features cloud sync with light and dark mode"
+        image={todoImage}
+        imageAlt="Screenshot of Todo app"
+      />
+      <ProjectCard
+        title="LOOPSTUDIOS"
+        subtitle="A VR experience app made for Loopstudios"
+        image={loopstudiosImage}
+        imageAlt="Screenshot of Loopstudios app"
+      />
+    </ul>
+
+    <div class="px-6 md:px-0 mt-24 md:mt-[110px]">
+      <ProjectTypesCards />
+    </div>
   </main>
 </Layout>
