@@ -8,42 +8,44 @@ import boxedWaterImage from '@/assets/graphic-design/image-boxed-water.jpg'
 import scienceImage from '@/assets/graphic-design/image-science.jpg'
 ---
 
-<Layout title='Graphic Design - Designo'>
-  <main class='pb-24 md:pb-[110px]'>
+<Layout title="Graphic Design - Designo">
+  <main class="pb-24 md:pb-[110px] md:px-10 lg:px-[165px]">
     <section
-      class='bg-peach-500 px-6 bg-[url(/assets/shared/bg-pattern-design-pages-intro-mobile.svg)] bg-no-repeat bg-[position:top_right] h-80 flex flex-col items-center justify-center text-white'
+      class="bg-peach-500 px-6 md:px-36 bg-[url(/assets/shared/bg-pattern-design-pages-intro-mobile.svg)] md:bg-[url(/assets/shared/bg-pattern-design-pages-intro-tablet.svg)] lg:bg-[url(/assets/graphic-design/bg-pattern-intro-graphic.svg)] bg-no-repeat bg-[position:top_right] md:bg-[position:top_-170px_right_-180px] lg:bg-[position:top_-170px_left_-60px] h-80 md:h-[252px] flex flex-col items-center justify-center text-white md:rounded-[15px]"
     >
-      <h1 class='mb-6 text-[32px] leading-9 font-medium'>Graphic Design</h1>
-      <p class='text-center'>
+      <h1 class="mb-6 text-[32px] md:text-heading1 leading-9 font-medium">
+        Graphic Design
+      </h1>
+      <p class="text-center">
         We deliver eye-catching branding materials that are tailored to meet
         your business objectives.
       </p>
     </section>
 
     <ul
-      class='flex flex-col px-6 md:px-10 gap-10 md:gap-8 pt-24 md:pt-[120px] items-center'
+      class="flex flex-col px-6 md:px-0 gap-10 md:gap-8 pt-24 md:pt-[120px] items-center lg:grid lg:grid-flow-col lg:auto-cols-auto"
     >
       <ProjectCard
-        title='Tim Brown'
+        title="Tim Brown"
         subtitle="A book cover designed for Tim Brown's new release, \'Change'"
         image={changeImage}
-        imageAlt='Change book on top of a table'
+        imageAlt="Change book on top of a table"
       />
       <ProjectCard
-        title='Boxed Water'
-        subtitle='A simple packaging concept made for Boxed Water'
+        title="Boxed Water"
+        subtitle="A simple packaging concept made for Boxed Water"
         image={boxedWaterImage}
-        imageAlt='Boxed water product'
+        imageAlt="Boxed water product"
       />
       <ProjectCard
-        title='Science!'
-        subtitle='A poster made in collaboration with the Federal Art Project'
+        title="Science!"
+        subtitle="A poster made in collaboration with the Federal Art Project"
         image={scienceImage}
-        imageAlt='Poster with an eye and notebook draw with the word Keeping Up on top'
+        imageAlt="Poster with an eye and notebook draw with the word Keeping Up on top"
       />
     </ul>
 
-    <div class='px-6 mt-24 md:mt-[110px]'>
+    <div class="px-6 md:px-0 mt-24 md:mt-[110px]">
       <ProjectTypesCards />
     </div>
   </main>

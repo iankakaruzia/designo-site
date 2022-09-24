@@ -10,13 +10,14 @@ const { title, subtitle, image, imageAlt } = Astro.props as Props
 ---
 
 <li
-  class='rounded-[15px] bg-[#fdf3f0] max-w-[327px] md:min-h-[310px] md:h-full md:max-w-[689px] overflow-hidden md:flex md:items-center'
+  class="rounded-[15px] bg-[#fdf3f0] max-w-[327px] lg:max-w-[350px] md:min-h-[310px] md:h-full md:max-w-[689px] overflow-hidden md:flex lg:flex-col md:items-center lg:mx-auto"
 >
-  <img class='w-full md:w-[339px]' src={image} alt={imageAlt} />
-  <div class='py-8 px-[30px] flex flex-col items-center gap-4'>
-    <strong class='font-medium text-heading3 text-peach-500 uppercase'
+  <img class="w-full md:w-[339px] lg:w-full" src={image} alt={imageAlt} />
+  <div class="py-8 px-[30px] flex flex-col items-center gap-4">
+    <strong
+      class="font-medium text-heading3 text-center text-peach-500 uppercase"
       >{title}
     </strong>
-    <p class='text-center'>{subtitle}</p>
+    <p class="text-center">{subtitle}</p>
   </div>
 </li>

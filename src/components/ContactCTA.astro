@@ -2,32 +2,32 @@
 const isHomePage = Astro.url.pathname === '/'
 ---
 
-<section class='cta px-6 lg:px-[165px] md:px-10 lg:relative'>
+<section class="cta px-6 lg:px-[165px] md:px-10 lg:relative">
   {
     isHomePage && (
-      <div class='lg:absolute lg:top-[-445px] lg:right-0 lg:h-[594px] lg:w-[1006px] lg:-rotate-180 lg:bg-pattern-leaf' />
+      <div class="lg:absolute lg:top-[-445px] lg:right-0 lg:h-[594px] lg:w-[1006px] lg:-rotate-180 lg:bg-pattern-leaf" />
     )
   }
   <div
-    class='bg-peach-500 relative bg-cta bg-no-repeat bg-[length:850px] lg:bg-[length:740px] bg-[top_-6.5rem_right_-18.6rem] md:bg-[top_-7rem_right_-8.6rem] lg:bg-[top_-6rem_right_-0.5rem] px-6 md:px-14 lg:px-24 py-16 lg:py-[72px] rounded-2xl flex flex-col lg:flex-row lg:justify-between items-center'
+    class="bg-peach-500 relative bg-cta bg-no-repeat bg-[length:850px] lg:bg-[length:740px] bg-[top_-6.5rem_right_-18.6rem] md:bg-[top_-7rem_right_-8.6rem] lg:bg-[top_-6rem_right_-0.5rem] px-6 md:px-14 lg:px-24 py-16 lg:py-[72px] rounded-2xl flex flex-col lg:flex-row lg:justify-between items-center"
   >
     <div
-      class='flex flex-col items-center lg:items-start lg:max-w-[460px] lg:w-full'
+      class="flex flex-col items-center lg:items-start lg:max-w-[460px] lg:w-full"
     >
       <h5
-        class='text-white font-medium text-[32px] leading-9 text-center lg:text-left mb-[6px] max-w-[335px]'
+        class="text-white font-medium text-[32px] leading-9 text-center lg:text-left mb-[6px] max-w-[335px]"
       >
         Let's talk about your project
       </h5>
-      <p class='text-center lg:text-left text-white text-body mb-8 lg:m-0'>
+      <p class="text-center lg:text-left text-white text-body mb-8 lg:m-0">
         Ready to take it to the next level? Contact us today and find out how
         our expertise can help your business grow.
       </p>
     </div>
 
     <a
-      href='/contact'
-      class='bg-white hover:bg-peach-300 hover:text-white transition-colors h-14 px-[18px] flex items-center rounded-lg uppercase font-medium text-[15px] leading-[22px]'
+      href="/contact"
+      class="bg-white hover:bg-peach-300 hover:text-white transition-colors h-14 px-[18px] flex items-center text-center rounded-lg uppercase font-medium text-[15px] leading-[22px]"
       >Get In Touch
     </a>
   </div>
