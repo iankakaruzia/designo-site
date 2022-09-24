@@ -12,7 +12,7 @@ export function MobileMenu() {
       <button
         onClick={() => setIsOpen((prevIsOpen) => !prevIsOpen)}
         aria-label={isOpen ? 'Close Menu' : 'Open Menu'}
-        className='md:hidden'
+        className="md:hidden"
       >
         <img
           src={isOpen ? iconClose : iconHamburger}
@@ -27,27 +27,27 @@ export function MobileMenu() {
           isOpen ? 'block opacity-100' : 'pointer-events-none hidden opacity-0'
         )}
       >
-        <ul class='flex flex-col gap-8 bg-gray-900 px-6 py-12'>
+        <ul class="flex flex-col gap-8 bg-gray-900 px-6 py-12">
           <li>
             <a
-              href='/company'
-              className='text-2xl uppercase leading-6 tracking-[2px] text-white'
+              href="/company"
+              className="text-2xl uppercase leading-6 tracking-[2px] text-white"
             >
               Our Company
             </a>
           </li>
           <li>
             <a
-              href='/locations'
-              className='text-2xl uppercase leading-6 tracking-[2px] text-white'
+              href="/locations"
+              className="text-2xl uppercase leading-6 tracking-[2px] text-white"
             >
               Locations
             </a>
           </li>
           <li>
             <a
-              href='/contact'
-              className='text-2xl uppercase leading-6 tracking-[2px] text-white'
+              href="/contact"
+              className="text-2xl uppercase leading-6 tracking-[2px] text-white"
             >
               Contact
             </a>
