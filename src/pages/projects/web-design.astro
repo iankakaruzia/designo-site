@@ -1,10 +1,75 @@
 ---
+import ProjectCard from '@/components/ProjectCard.astro'
 import ProjectTypesCards from '@/components/ProjectTypesCards.astro'
 import Layout from '@/layouts/Layout.astro'
+
+import blogrImage from '@/assets/web-design/image-blogr.jpg'
+import builderImage from '@/assets/web-design/image-builder.jpg'
+import campImage from '@/assets/web-design/image-camp.jpg'
+import expressImage from '@/assets/web-design/image-express.jpg'
+import photonImage from '@/assets/web-design/image-photon.jpg'
+import transferImage from '@/assets/web-design/image-transfer.jpg'
 ---
 
 <Layout title="Web Design - Designo">
-  <main>
-    <ProjectTypesCards />
+  <main
+    class="pb-24 md:pb-[110px] md:px-10 lg:px-[165px] lg:bg-pattern-leaf lg:bg-no-repeat lg:bg-[top_120px_left]"
+  >
+    <section
+      class="bg-peach-500 px-6 md:px-36 bg-[url(/assets/shared/bg-pattern-design-pages-intro-mobile.svg)] md:bg-[url(/assets/shared/bg-pattern-design-pages-intro-tablet.svg)] lg:bg-[url(/assets/web-design/bg-pattern-intro-web.svg)] bg-no-repeat bg-[position:top_right] md:bg-[position:top_-170px_right_-180px] lg:bg-[position:top_-170px_right] h-80 md:h-[252px] flex flex-col items-center justify-center text-white md:rounded-[15px]"
+    >
+      <h1 class="mb-6 text-[32px] md:text-heading1 leading-9 font-medium">
+        Web Design
+      </h1>
+      <p class="text-center">
+        We build websites that serve as powerful marketing tools and bring
+        memorable brand experiences.
+      </p>
+    </section>
+
+    <ul
+      class="flex flex-col px-6 md:px-0 gap-10 md:gap-8 pt-24 md:pt-[120px] items-center lg:grid lg:grid-cols-[repeat(auto-fit,_minmax(350px,_1fr))]"
+    >
+      <ProjectCard
+        title="EXPRESS"
+        subtitle="A multi-carrier shipping website for ecommerce businesses"
+        image={expressImage}
+        imageAlt="Screenshot of Express website"
+      />
+      <ProjectCard
+        title="TRANSFER"
+        subtitle="Site for low-cost money transfers and sending money within seconds"
+        image={transferImage}
+        imageAlt="Screenshot of Transfer website"
+      />
+      <ProjectCard
+        title="PHOTON"
+        subtitle="A state-of-the-art music player with high-resolution audio and DSP effects"
+        image={photonImage}
+        imageAlt="Screenshot of Photon website"
+      />
+      <ProjectCard
+        title="BUILDER"
+        subtitle="Connects users with local contractors based on their location"
+        image={builderImage}
+        imageAlt="Screenshot of Builder website"
+      />
+      <ProjectCard
+        title="BLOGR"
+        subtitle="Blogr is a platform for creating an online blog or publication"
+        image={blogrImage}
+        imageAlt="Screenshot of Blogr website"
+      />
+      <ProjectCard
+        title="CAMP"
+        subtitle="Get expert training in coding, data, design, and digital marketing"
+        image={campImage}
+        imageAlt="Screenshot of Camp website"
+      />
+    </ul>
+
+    <div class="px-6 md:px-0 mt-24 md:mt-[110px]">
+      <ProjectTypesCards />
+    </div>
   </main>
 </Layout>
