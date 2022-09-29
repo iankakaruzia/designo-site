@@ -97,7 +97,7 @@ export function ContactForm() {
   }
 
   return (
-    <div class="flex flex-col items-center bg-peach-500 bg-contact-mobile bg-[top_0_right_-418px] bg-no-repeat pt-[72px] md:rounded-[15px] md:bg-contact-desktop md:bg-[top_-82px_left_-118px] md:px-[58px] lg:flex-row lg:bg-[top_-150px_left_-2px] lg:py-14 lg:px-24">
+    <div class="flex flex-col items-center bg-peach-500 bg-contact-mobile bg-[top_0_right_-418px] bg-no-repeat pt-[72px] md:rounded-[15px] md:bg-circle-pattern md:bg-[top_-82px_left_-118px] md:px-[58px] lg:flex-row lg:bg-[top_-150px_left_-2px] lg:py-14 lg:px-24">
       <div class="mb-12 flex flex-col items-center px-6 md:items-start md:p-0 lg:pr-24">
         <h1 class="mb-6 text-[32px] font-medium leading-[36px] text-white md:text-heading1">
           Contact Us
