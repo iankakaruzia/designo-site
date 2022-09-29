@@ -4,20 +4,22 @@ import Layout from '@/layouts/Layout.astro'
 ---
 
 <Layout title="Home - Designo">
-  <main class="md:px-10">
+  <main
+    class="md:px-10 lg:px-[165px] lg:bg-pattern-leaf lg:bg-no-repeat lg:bg-[top_200px_left]"
+  >
     <section
-      class="md:rounded-[15px] md:mb-[120px] md:overflow-hidden bg-peach-500 bg-[url(/assets/company/mobile/bg-pattern-hero-about-mobile.svg)] md:bg-circle-pattern bg-[position:top_180px_right] md:bg-[position:top_-100px_left_-100px] bg-no-repeat"
+      class="md:rounded-[15px] md:mb-[120px] lg:mb-40 md:overflow-hidden bg-peach-500 lg:flex bg-[url(/assets/company/mobile/bg-pattern-hero-about-mobile.svg)] md:bg-circle-pattern bg-[position:top_180px_right] md:bg-[position:top_-100px_left_-100px] lg:bg-[position:top_-160px_left] bg-no-repeat"
     >
       <div
-        class="bg-[url(/assets/company/mobile/image-about-hero.jpg)] md:bg-[url(/assets/company/tablet/image-about-hero.jpg)] bg-cover bg-no-repeat w-full h-80"
+        class="bg-[url(/assets/company/mobile/image-about-hero.jpg)] lg:order-2 md:bg-[url(/assets/company/tablet/image-about-hero.jpg)] lg:bg-[url(/assets/company/desktop/image-about-hero.jpg)] bg-cover bg-no-repeat w-full h-80 lg:h-[480px] xl:min-w-[476px]"
       >
       </div>
 
       <div
-        class="py-20 md:py-16 px-6 md:px-14 flex flex-col items-center gap-6 md:gap-8 text-white"
+        class="py-20 md:py-16 px-6 xl:pl-24 lg:w-full md:px-14 lg:py-0 lg:justify-center flex flex-col items-center lg:items-start gap-6 md:gap-8 text-white"
       >
         <h1 class="text-[32px] leading-9 md:text-5xl font-medium">About Us</h1>
-        <p class="text-center">
+        <p class="text-center lg:text-left xl:max-w-md">
           Founded in 2010, we are a creative agency that produces lasting
           results for our clients. We’ve partnered with many startups,
           corporations, and nonprofits alike to craft designs that make real
@@ -28,22 +30,22 @@ import Layout from '@/layouts/Layout.astro'
     </section>
 
     <section
-      class="md:rounded-[15px] md:overflow-hidden bg-[#fdf3f0] bg-[url(/assets/company/bg-pattern-sections.svg)] bg-[position:bottom_left] md:bg-[position:bottom_45px_left_100px] bg-no-repeat"
+      class="md:rounded-[15px] lg:flex md:overflow-hidden bg-[#fdf3f0] bg-[url(/assets/company/bg-pattern-sections.svg)] bg-[position:bottom_left] md:bg-[position:bottom_45px_left_100px] lg:bg-[position:bottom_right_-50px] bg-no-repeat"
     >
       <div
-        class="bg-[url(/assets/company/mobile/image-world-class-talent.jpg)] md:bg-[url(/assets/company/tablet/image-world-class-talent.jpg)] bg-cover bg-no-repeat w-full h-80"
+        class="bg-[url(/assets/company/mobile/image-world-class-talent.jpg)] md:bg-[url(/assets/company/tablet/image-world-class-talent.jpg)] lg:bg-[url(/assets/company/desktop/image-world-class-talent.jpg)] bg-cover bg-no-repeat w-full h-80 lg:h-[640px] xl:min-w-[476px]"
       >
       </div>
 
       <div
-        class="py-20 px-6 md:px-14 md:py-16 flex flex-col items-center gap-6"
+        class="py-20 px-6 md:px-14 md:py-16 xl:pl-24 flex lg:w-full flex-col items-center lg:items-start lg:justify-center gap-6"
       >
         <h2
           class="text-orange-500 text-[32px] md:text-[40px] md:leading-[48px] leading-9 font-medium"
         >
           World-class talent
         </h2>
-        <p class="text-center">
+        <p class="text-center lg:text-left xl:max-w-md">
           We are a crew of strategists, problem-solvers, and technologists.
           Every design is thoughtfully crafted from concept to launch, ensuring
           success in its given market. We are constantly updating our skills in
@@ -62,20 +64,20 @@ import Layout from '@/layouts/Layout.astro'
     <Locations />
 
     <section
-      class="md:rounded-[15px] md:overflow-hidden mb-[120px] bg-[#fdf3f0] bg-[url(/assets/company/bg-pattern-sections.svg)] bg-[position:bottom_left] md:bg-[position:bottom_45px_left_100px] bg-no-repeat"
+      class="md:rounded-[15px] md:overflow-hidden mb-[120px] lg:mb-40 lg:flex bg-[#fdf3f0] bg-[url(/assets/company/bg-pattern-sections.svg)] bg-[position:bottom_left] md:bg-[position:bottom_45px_left_100px] lg:bg-[position:bottom_left] bg-no-repeat"
     >
       <div
-        class="bg-[url(/assets/company/mobile/image-real-deal.jpg)] md:bg-[url(/assets/company/tablet/image-real-deal.jpg)] bg-cover bg-no-repeat w-full h-80"
+        class="bg-[url(/assets/company/mobile/image-real-deal.jpg)] lg:order-2 md:bg-[url(/assets/company/tablet/image-real-deal.jpg)] lg:bg-[url(/assets/company/desktop/image-real-deal.jpg)] bg-cover bg-no-repeat w-full h-80 lg:h-[640px] xl:min-w-[476px]"
       >
       </div>
 
       <div
-        class="py-20 px-6 md:px-14 md:py-16 flex flex-col items-center gap-6"
+        class="py-20 px-6 lg:w-full md:px-14 md:py-16 xl:pl-24 flex flex-col items-center lg:items-start lg:justify-center gap-6"
       >
         <h2 class="text-orange-500 text-[32px] leading-9 font-medium">
           The real deal
         </h2>
-        <p class="text-center">
+        <p class="text-center lg:text-left xl:max-w-md">
           As strategic partners in our clients’ businesses, we are ready to take
           on any challenge as our own. Solving real problems require empathy and
           collaboration, and we strive to bring a fresh perspective to every
