@@ -1,0 +1,105 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import { Map } from '@/components/Map'
+---
+
+<Layout title="Locations - Designo">
+  <main>
+    <ul class="mb-[120px]">
+      <li class="bg-[#FDF3F0]" id="canada">
+        <div class="h-80 flex-1">
+          <Map
+            client:only="preact"
+            center={[43.7085802, -79.2283245]}
+            zoom={13}
+            id="canada-map"
+          />
+        </div>
+
+        <div
+          class="flex flex-col items-center px-6 py-20 bg-[url(/assets/shared/bg-pattern-sections.svg)] bg-[position:bottom_-180px_left] bg-no-repeat"
+        >
+          <strong class="text-peach-500 font-medium text-[32px] leading-9 mb-6"
+            >Canada</strong
+          >
+          <div class="mb-6 flex flex-col items-center">
+            <span class="font-bold">Designo Central Office</span>
+            <address class="text-center not-italic">
+              3886 Wellington Street <br /> Toronto, Ontario M9C 3J5
+            </address>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <span class="font-bold">Contact</span>
+            <address class="text-center not-italic">
+              P: +1 253-863-8967 <br /> M: contact@designo.co
+            </address>
+          </div>
+        </div>
+      </li>
+
+      <li class="bg-[#FDF3F0] mt-10" id="australia">
+        <div class="h-80 flex-1">
+          <Map
+            client:only="preact"
+            center={[-33.0814031, 151.6102069]}
+            id="australia-map"
+          />
+        </div>
+
+        <div
+          class="flex flex-col items-center px-6 py-20 bg-[url(/assets/shared/bg-pattern-sections.svg)] bg-[position:bottom_-180px_left] bg-no-repeat"
+        >
+          <strong class="text-peach-500 font-medium text-[32px] leading-9 mb-6"
+            >Australia</strong
+          >
+          <div class="mb-6 flex flex-col items-center">
+            <span class="font-bold">Designo AU Office</span>
+            <address class="text-center not-italic">
+              19 Balonne Street <br /> New South Wales 2443
+            </address>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <span class="font-bold">Contact</span>
+            <address class="text-center not-italic">
+              P: (02) 6720 9092 <br /> M: contact@designo.au
+            </address>
+          </div>
+        </div>
+      </li>
+
+      <li class="bg-[#FDF3F0] mt-10" id="uk">
+        <div class="h-80 flex-1">
+          <Map
+            client:only="preact"
+            center={[53.7360942, -1.3326407]}
+            zoom={13}
+            id="uk-map"
+          />
+        </div>
+
+        <div
+          class="flex flex-col items-center px-6 py-20 bg-[url(/assets/shared/bg-pattern-sections.svg)] bg-[position:bottom_-180px_left] bg-no-repeat"
+        >
+          <strong class="text-peach-500 font-medium text-[32px] leading-9 mb-6"
+            >United Kingdom</strong
+          >
+          <div class="mb-6 flex flex-col items-center">
+            <span class="font-bold">Designo UK Office</span>
+            <address class="text-center not-italic">
+              13 Colorado Way <br /> Rhyd-y-fro SA8 9GA
+            </address>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <span class="font-bold">Contact</span>
+            <address class="text-center not-italic">
+              P: 078 3115 1400 <br /> M: contact@designo.uk
+            </address>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </main>
+</Layout>

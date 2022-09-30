@@ -23,7 +23,7 @@ export function MobileMenu() {
       <nav
         aria-hidden={!isOpen}
         className={classnames(
-          'fixed inset-0 top-[91px] z-10 bg-black bg-opacity-50 transition-all duration-200 ease-in-out',
+          'fixed inset-0 top-[91px] z-[1500] bg-black bg-opacity-50 transition-all duration-200 ease-in-out',
           isOpen ? 'block opacity-100' : 'pointer-events-none hidden opacity-0'
         )}
       >
