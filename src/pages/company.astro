@@ -4,9 +4,7 @@ import Layout from '@/layouts/Layout.astro'
 ---
 
 <Layout title="Home - Designo">
-  <main
-    class="md:px-10 lg:px-[165px] lg:bg-pattern-leaf lg:bg-no-repeat lg:bg-[top_200px_left]"
-  >
+  <main class="md:px-10 lg:px-[165px] overlay-img">
     <section
       class="md:rounded-[15px] md:mb-[120px] lg:mb-40 md:overflow-hidden bg-peach-500 lg:flex bg-[url(/assets/company/mobile/bg-pattern-hero-about-mobile.svg)] md:bg-circle-pattern bg-[position:top_180px_right] md:bg-[position:top_-100px_left_-100px] lg:bg-[position:top_-160px_left] bg-no-repeat"
     >
@@ -93,3 +91,14 @@ import Layout from '@/layouts/Layout.astro'
     </section>
   </main>
 </Layout>
+
+<style scoped>
+  @media (min-width: 1024px) {
+    .overlay-img {
+      background-image: url(/assets/shared/bg-pattern-leaf.svg),
+        url(/assets/shared/bg-pattern-leaf.svg);
+      background-repeat: no-repeat, no-repeat;
+      background-position: top 200px left, bottom 400px right -300px;
+    }
+  }
+</style>
