@@ -1,44 +1,62 @@
-# Welcome to [Astro](https://astro.build)
+# Frontend Mentor - Designo agency website solution
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+This is a solution to the [Designo agency website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/designo-multipage-website-G48K6rfUT). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Table of contents
 
-## 🚀 Project Structure
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
 
-Inside of your Astro project, you'll see the following folders and files:
+## Overview
 
-```
-/
-├── public/
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+### The challenge
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Users should be able to:
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components or layouts.
+- View the optimal layout for each page depending on their device's screen size
+- See hover states for all interactive elements throughout the site
+- Receive an error message when the contact form is submitted if:
+  - The `Name`, `Email Address` or `Your Message` fields are empty should show "Can't be empty"
+  - The `Email Address` is not formatted correctly should show "Please use a valid email address"
+- **Bonus**: View actual locations on the locations page maps (we recommend [Leaflet JS](https://leafletjs.com/) for this)
 
-Any static assets, like images, can be placed in the `public/` directory.
+### Screenshot
 
-## 🧞 Commands
+![](./screenshot.png)
 
-All commands are run from the root of the project, from a terminal:
+### Links
 
-| Command                | Action                                             |
-| :--------------------- | :------------------------------------------------- |
-| `npm install`          | Installs dependencies                              |
-| `npm run dev`          | Starts local dev server at `localhost:3000`        |
-| `npm run build`        | Build your production site to `./dist/`            |
-| `npm run preview`      | Preview your build locally, before deploying       |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
-| `npm run astro --help` | Get help using the Astro CLI                       |
+- [Solution URL](https://github.com/iankakaruzia/designo-site)
+- [Live Site URL](https://designo-astro.netlify.app/)
 
-## 👀 Want to learn more?
+## My process
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+### Built with
+
+- Semantic HTML5 markup
+- TailwindCSS
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [Astro](https://astro.build/)
+- [Preact](https://preactjs.com/)
+- [Leaflet](https://leafletjs.com/)
+
+### What I learned
+
+This was my first time using Astro, and I really enjoyed it. I also learned how to use Leaflet without helper libraries like React-Leaflet.
+
+### Continued development
+
+I'll keep using astro for websites that don't require a lot of dynamic content, probably try out astro with different frameworks like Solid.JS and Svelte.
+
+## Author
+
+- Frontend Mentor - [@iankakaruzia](https://www.frontendmentor.io/profile/iankakaruzia)
