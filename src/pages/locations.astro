@@ -4,10 +4,12 @@ import { Map } from '@/components/Map'
 ---
 
 <Layout title="Locations - Designo">
-  <main class="px-10">
-    <ul class="mb-[120px]">
-      <li id="canada">
-        <div class="h-80 bg-[#FDF3F0] md:rounded-[15px] overflow-hidden">
+  <main class="px-10 lg:px-[165px]">
+    <ul class="mb-[120px] xl:mb-40">
+      <li id="canada" class="xl:flex">
+        <div
+          class="h-80 bg-[#FDF3F0] md:rounded-[15px] overflow-hidden xl:flex-1 xl:order-2 xl:max-w-[350px]"
+        >
           <Map
             client:only="preact"
             center={[43.7085802, -79.2283245]}
@@ -17,9 +19,10 @@ import { Map } from '@/components/Map'
         </div>
 
         <div
-          class="flex flex-col bg-[#FDF3F0] md:rounded-[15px] md:mt-8 items-center md:items-start px-6 md:px-[75px] py-20 bg-[url(/assets/shared/bg-pattern-sections.svg)] bg-[position:bottom_-180px_left] md:bg-[position:bottom_left] bg-no-repeat"
+          class="flex flex-col bg-[#FDF3F0] md:rounded-[15px] md:mt-8 xl:flex-1 xl:mt-0 xl:mr-8 items-center md:items-start px-6 md:px-[75px] py-20 bg-[url(/assets/shared/bg-pattern-sections.svg)] bg-[position:bottom_-180px_left] md:bg-[position:bottom_left] bg-no-repeat"
         >
-          <strong class="text-peach-500 font-medium text-[32px] leading-9 mb-6"
+          <strong
+            class="text-peach-500 font-medium text-[32px] leading-9 mb-6 xl:text-heading2"
             >Canada</strong
           >
           <div class="md:flex md:items-start">
@@ -42,8 +45,10 @@ import { Map } from '@/components/Map'
         </div>
       </li>
 
-      <li class="mt-10 md:mt-[120px]" id="australia">
-        <div class="h-80 bg-[#FDF3F0] md:rounded-[15px] overflow-hidden">
+      <li class="mt-10 md:mt-[120px] xl:mt-8 xl:flex" id="australia">
+        <div
+          class="h-80 bg-[#FDF3F0] md:rounded-[15px] overflow-hidden xl:flex-1 xl:max-w-[350px]"
+        >
           <Map
             client:only="preact"
             center={[-33.0814031, 151.6102069]}
@@ -52,9 +57,10 @@ import { Map } from '@/components/Map'
         </div>
 
         <div
-          class="flex flex-col bg-[#FDF3F0] md:rounded-[15px] md:mt-8 items-center md:items-start px-6 md:px-[75px] py-20 bg-[url(/assets/shared/bg-pattern-sections.svg)] bg-[position:bottom_-180px_left] md:bg-[position:bottom_left] bg-no-repeat"
+          class="flex flex-col bg-[#FDF3F0] md:rounded-[15px] md:mt-8 xl:flex-1 xl:mt-0 xl:ml-8 items-center md:items-start px-6 md:px-[75px] py-20 bg-[url(/assets/shared/bg-pattern-sections.svg)] bg-[position:bottom_-180px_left] md:bg-[position:bottom_left] bg-no-repeat"
         >
-          <strong class="text-peach-500 font-medium text-[32px] leading-9 mb-6"
+          <strong
+            class="text-peach-500 font-medium text-[32px] leading-9 mb-6 xl:text-heading2"
             >Australia</strong
           >
           <div class="md:flex md:items-start">
@@ -77,8 +83,10 @@ import { Map } from '@/components/Map'
         </div>
       </li>
 
-      <li class="mt-10 md:mt-[120px]" id="uk">
-        <div class="h-80 bg-[#FDF3F0] md:rounded-[15px] overflow-hidden">
+      <li class="mt-10 md:mt-[120px] xl:mt-8 xl:flex" id="uk">
+        <div
+          class="h-80 bg-[#FDF3F0] md:rounded-[15px] overflow-hidden xl:flex-1 xl:order-2 xl:max-w-[350px]"
+        >
           <Map
             client:only="preact"
             center={[53.7360942, -1.3326407]}
@@ -88,9 +96,10 @@ import { Map } from '@/components/Map'
         </div>
 
         <div
-          class="flex flex-col bg-[#FDF3F0] md:rounded-[15px] md:mt-8 items-center md:items-start px-6 md:px-[75px] py-20 bg-[url(/assets/shared/bg-pattern-sections.svg)] bg-[position:bottom_-180px_left] md:bg-[position:bottom_left] bg-no-repeat"
+          class="flex flex-col bg-[#FDF3F0] md:rounded-[15px] md:mt-8 xl:flex-1 xl:mt-0 xl:mr-8 items-center md:items-start px-6 md:px-[75px] py-20 bg-[url(/assets/shared/bg-pattern-sections.svg)] bg-[position:bottom_-180px_left] md:bg-[position:bottom_left] bg-no-repeat"
         >
-          <strong class="text-peach-500 font-medium text-[32px] leading-9 mb-6"
+          <strong
+            class="text-peach-500 font-medium text-[32px] leading-9 mb-6 xl:text-heading2"
             >United Kingdom</strong
           >
           <div class="md:flex md:items-start">
